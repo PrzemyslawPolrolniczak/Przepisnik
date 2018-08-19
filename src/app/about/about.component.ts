@@ -7,17 +7,18 @@ import { MenuInterface } from '../shared/menu/menu-interface';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  activeSubComponent: string;
   menuOptions: MenuInterface[] = [
     {
       id: 0,
-      name: 'test',
-      route: 'none',
+      name: 'O twórcy',
+      data: 'creator',
       active: false
     },
     {
       id: 1,
-      name: 'test',
-      route: 'none',
+      name: 'Baza przepisów',
+      data: 'database',
       active: false
     }
   ]
@@ -25,6 +26,10 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeEvent(e :string):void {
+    this.activeSubComponent = e;
   }
 
 }

@@ -4,7 +4,7 @@ import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: [
     MenuComponent

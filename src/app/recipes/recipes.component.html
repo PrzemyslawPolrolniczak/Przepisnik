@@ -1,3 +1,12 @@
-<p>
-  recipes works!
-</p>
+<div class="recipes component-view">
+    <app-menu [menuItems]='menuOptions' (emitData)='changeEvent($event)'></app-menu>
+    <div class="content container-fluid">
+      <div class="row">
+        <div class="col-sm-2 col-md-4 col-lg-3" *ngFor='let recipe of hardcodedRecipes'>
+          <div class="recipe">
+            <p>{{ recipe.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

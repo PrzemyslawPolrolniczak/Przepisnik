@@ -1,7 +1,13 @@
 
-<div class="about">
-  <app-menu [menuItems]='menuOptions'></app-menu>
+<div class="about component-view">
+  <app-menu [menuItems]='menuOptions' (emitData)='changeEvent($event)'></app-menu>
   <div class="content">
-      HEHEH
+    <div class="default-view" *ngIf='activeSubComponent == null'>
+      <h2 class="text-center">Witaj! Ta strona została stworzona specjalnie na potrzeby odpowiedzi na nurtujące Cię pytania</h2>
+      <h3 class="text-center">Jeśli nie znajdziesz na niej odpowiedzi dotyczącej działania któregoś segmentu aplikacji, śmiało napisz do mnie maila na adres</h3>
+      <h3 class="text-center">przemekp96@gmail.com</h3>
+    </div>
+    <app-creator *ngIf='activeSubComponent == "creator"'></app-creator>
+    <app-database *ngIf='activeSubComponent == "database"'></app-database>
   </div>
 </div>

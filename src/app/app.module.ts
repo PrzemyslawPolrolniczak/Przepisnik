@@ -8,6 +8,8 @@ import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { SharedModule } from './shared/shared.module';
+import { CreatorComponent } from './about/creator/creator.component';
+import { DatabaseComponent } from './about/database/database.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { SharedModule } from './shared/shared.module';
     RegisterComponent,
     AboutComponent,
     RecipesComponent,
+    CreatorComponent,
+    DatabaseComponent,
   ],
   imports: [
     BrowserModule,
