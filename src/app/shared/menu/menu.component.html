@@ -1,0 +1,7 @@
+
+<nav>
+  <a (click)='turnActive(item.id)' 
+    *ngFor='let item of menuItems' 
+    [class.active]='item.active == true' 
+    class="nav-link nav-option">{{item.name}}</a>
+</nav>

@@ -1,0 +1,17 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+form {
+    background-color: #f8f9fa;
+}
+
+.register-form {
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+}
